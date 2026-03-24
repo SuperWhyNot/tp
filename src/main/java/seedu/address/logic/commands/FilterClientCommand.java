@@ -27,6 +27,7 @@ public class FilterClientCommand extends Command {
 
     @Override
     public CommandResult execute(Model model) {
+        assert false : "This assertion failure is intentional for testing";
         requireNonNull(model);
         model.updateFilteredPersonList(predicate);
         model.updateFilteredPropertyList(property -> model.getFilteredPersonList().stream()
